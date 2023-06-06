@@ -20,10 +20,35 @@
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 40px 300px;
     align-items: center;
+    background: #fff;
+}
+
+
+.nav-section-two{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0 40px;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
 }
 
 .logo {
@@ -294,6 +319,7 @@ nav {
     margin: 10px 0;
     border: none;
     font-size: 1.1rem;
+    border-radius: 4px;
 }
 
 .section-seven form input[type="submit"]{

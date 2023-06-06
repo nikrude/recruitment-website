@@ -10,14 +10,23 @@
 </head>
 
 <body>
-    <div class="large-section-one">
 
-        <!-- First Page -->
-        <nav>
-            <div class="logo">2020Technologies</div>
+    <!-- First Page -->
+    <nav>
+        <div class="logo">2020Technologies</div>
+        <div class="nav-section-two">
+            <ul>
+                <li><a href="#" onclick="scrollToSection('about', event)">- About Us</a></li>
+                <li><a href="#" onclick="scrollToSection('stats', event)">- Stats</a></li>
+                <li><a href="#" onclick="scrollToSection('principles', event)">- Our Principles</a></li>
+                <li><a href="#" onclick="scrollToSection('services', event)">- Our Services</a></li>
+                <li><a href="#" onclick="scrollToSection('contact', event)">- Contact Us</a></li>
+            </ul>
             <button class="contact-details">+91 - 9555970748</button>
-        </nav>
-        <div class="section-one">
+        </div>
+    </nav>
+    <div class="large-section-one">
+        <div class="section-one" id="about">
             <div class="section-one-part-one">
                 <h1><span class="normal">Recruitment based on</span> professionals in communities</h1>
                 <p><span class="bold">2020 Technologies</span> is an innovative recruitment agency that differentiates
@@ -25,7 +34,7 @@
                 <p>With an international community of more than <span class="bold">200 HR experts,</span> we effectively
                     connect candidates with employers to realize their full mutual potential. We are among the <span
                         class="bold">best staffing firms</span> in the world.</p>
-                <button>Book a meeting</button>
+                <button onclick="scrollToSection('contact', event)">Book a meeting</button>
             </div>
             <div class="section-one-part-two">
                 <img src="images/hiring_image.png" alt="Hiring!!">
@@ -52,7 +61,7 @@
         </div>
 
         <!-- Third Page -->
-        <div class="section-three">
+        <div class="section-three" id="stats">
             <h1><span class="normal">The numbers </span>don't lie</h1>
             <div class="stats">
                 <div class="stat one">
@@ -86,7 +95,7 @@
 
     <!-- Fourth Page -->
     <div class="section-four-background">
-        <div class="section-four">
+        <div class="section-four"  id="principles">
             <div class="section-four-part-one">
                 <h1><span class="normal">Our</span> Principles</h1>
                 <p>We have a different approach than the traditional recruitment agencies, as we don't solely rely on a
@@ -104,7 +113,7 @@
                         important asset.</li>
                     <li><span class="bold">Be flexible and personable</span> because every company is different.</li>
                 </ul>
-                <button>Book a meeting</button>
+                <button onclick="scrollToSection('contact', event)">Book a meeting</button>
             </div>
             <div class="section-four-part-two">
                 <img src="images/hiring_image3.png" alt="Hiring!!">
@@ -115,7 +124,7 @@
     <div class="large-section-one">
 
         <!-- Fifth Page -->
-        <div class="section-five">
+        <div class="section-five" id="services">
             <h1><span class="normal">Our </span>Services</h1>
             <p>We are adept at assisting you in selecting top-notch individuals for your organization.</p>
             <h4>Talent Sourcing:</h4>
@@ -186,9 +195,10 @@
         </div>
 
     </div>
+
     <!-- Seventh Page -->
     <div class="section-seven-background">
-        <div class="section-seven">
+        <div class="section-seven"  id="contact">
             <h1>Want to know more?</h1>
             <p>If you have specific questions, please send them to us via the contact form.</p>
             <form action="">
@@ -201,8 +211,7 @@
         </div>
     </div>
 
-    <!-- Last Page -->
-    <div></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
