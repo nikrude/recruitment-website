@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>2020 Technologies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+
     <!-- First Page -->
-    <nav>
-        <div class="logo">2020Technologies</div>
-        <div class="nav-section-two">
-            <ul>
-                <li><a href="#" onclick="scrollToSection('about', event)">- About Us</a></li>
-                <li><a href="#" onclick="scrollToSection('stats', event)">- Stats</a></li>
-                <li><a href="#" onclick="scrollToSection('principles', event)">- Our Principles</a></li>
-                <li><a href="#" onclick="scrollToSection('services', event)">- Our Services</a></li>
-                <li><a href="#" onclick="scrollToSection('contact', event)">- Contact Us</a></li>
-            </ul>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+    <header>
+        <nav>
+            <div class="logo">
+                <div>2020</div>
+                <div>Technologies</div>
             </div>
-            <button class="contact-details">+91 - 9555970748</button>
-        </div>
-    </nav>
+            <div class="nav-section-two">
+                <ul>
+                    <li><a href="#" onclick="scrollToSection('about', event)">- About Us</a></li>
+                    <li><a href="#" onclick="scrollToSection('stats', event)">- Stats</a></li>
+                    <li><a href="#" onclick="scrollToSection('principles', event)">- Our Principles</a></li>
+                    <li><a href="#" onclick="scrollToSection('services', event)">- Our Services</a></li>
+                    <li><a href="#" onclick="scrollToSection('contact', event)">- Contact Us</a></li>
+                </ul>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <button class="contact-details">+91 - 9555970748</button>
+            </div>
+        </nav>
+    </header>
     <div class="large-section-one">
         <div class="section-one" id="about">
             <div class="section-one-part-one">
@@ -212,7 +219,7 @@
                 <textarea id="userinput" cols="30" rows="6" placeholder="Your Message"></textarea>
                 <input type="submit" id="submit" placeholder="Send">
             </form>
-            <p>Also you can connect us on Email - <span class="bold">deepak.kumar@2020technologies.in</span></p>
+            <p>Also you can connect us on Email - deepak.kumar@2020technologies.in</p>
         </div>
     </div>
 
