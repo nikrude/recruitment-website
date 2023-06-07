@@ -11,12 +11,14 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: Poppins;
     /* outline: 1px solid #000; */
 }
 
 .large-section-one {
-    padding: 0 300px;
+    padding: 0 10%;
+    transition: padding 0.3s ease;
 }
 
 nav {
@@ -25,30 +27,44 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 300px;
+    padding: 40px 10%;
+    transition: padding 0.3s ease;
     align-items: center;
     background: #fff;
 }
 
 
-.nav-section-two{
+.nav-section-two {
     display: flex;
     align-items: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     padding: 0 40px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
 }
 
-nav ul li{
+nav ul li {
     padding: 0 10px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #000;
+}
+
+.toggle-btn {
+    color: #fff;
+    background: #19A7CE;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    margin: 0 20px 0 0;
+    padding: 1px 11px;
+    border-radius: 4px;
 }
 
 .logo {
@@ -69,6 +85,7 @@ nav ul li a{
 
 .section-one {
     display: flex;
+    flex-wrap: wrap;
     height: 80vh;
 }
 
@@ -147,6 +164,10 @@ nav ul li a{
     font-size: 35px;
 }
 
+.section-three{
+    height: 30vh;
+}
+
 .section-three h1 {
     font-size: 35px;
     padding: 40px 0;
@@ -154,7 +175,6 @@ nav ul li a{
 
 .stats {
     display: flex;
-
 }
 
 .stats .stat {
@@ -191,7 +211,8 @@ nav ul li a{
     margin-top: 100px;
     background: #19A7CE;
     height: 80vh;
-    padding: 0 300px;
+    padding: 0 10%;
+    transition: padding 0.3s ease;
 }
 
 .section-four {
@@ -241,50 +262,50 @@ nav ul li a{
     font-size: 1.2rem;
 }
 
-.section-five{
+.section-five {
     height: 100vh;
 }
 
-.section-five h1{
+.section-five h1 {
     font-size: 35px;
     padding: 40px 0 10px 0;
 }
 
-.section-five h4{
+.section-five h4 {
     font-size: 1.1rem;
     margin-top: 20px;
 }
 
 
-.section-five p{
+.section-five p {
     color: #505050;
     font-size: 1rem;
 }
 
-.section-six{
+.section-six {
     display: flex;
     height: 50vh;
     margin-top: 100px;
 }
 
-.section-six-part-one{
+.section-six-part-one {
     width: 50%;
 }
 
-.section-six-part-two{
+.section-six-part-two {
     width: 50%;
 }
 
-.section-six-part-two img{
+.section-six-part-two img {
     width: 100%;
 }
 
-.section-six-part-one h1{
+.section-six-part-one h1 {
     font-size: 35px;
     padding: 40px 0 0 0;
 }
 
-.section-six-part-one p{
+.section-six-part-one p {
     color: #505050;
     font-size: 1.1rem;
     padding: 30px 0 20px 0;
@@ -294,27 +315,30 @@ nav ul li a{
     margin-top: 100px;
     background: #19A7CE;
     height: 80vh;
-    padding: 0 300px;
+    padding: 0 10%;
+    transition: padding 0.3s ease;
 }
 
-.section-seven h1{
+.section-seven h1 {
+    color: #146C94;
     font-size: 35px;
     padding: 40px 0 0 0;
 }
 
-.section-seven p{
-    color: #505050;
+.section-seven p {
+    color: #fff;
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
-.section-seven form{
+
+.section-seven form {
     display: flex;
     flex-direction: column;
 }
 
 .section-seven form input,
-.section-seven form textarea{
+.section-seven form textarea {
     padding: 20px;
     margin: 10px 0;
     border: none;
@@ -322,7 +346,7 @@ nav ul li a{
     border-radius: 4px;
 }
 
-.section-seven form input[type="submit"]{
+.section-seven form input[type="submit"] {
     background: #146C94;
     color: #fff;
     padding: 10px;
@@ -333,6 +357,73 @@ nav ul li a{
 }
 
 .section-seven form input:focus,
-.section-seven form textarea:focus{
+.section-seven form textarea:focus {
     outline: none;
+}
+
+
+@media(max-width: 1428px) {
+    nav ul {
+        display: none;
+        opacity: 0;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
+
+@media(max-width: 650px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .contact-details {
+        display: none;
+    }
+
+    .toggle-btn {
+        margin-left: 0;
+    }
+
+    nav{
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .large-section-one {
+        padding: 0 6%;
+    }
+
+    nav {
+        padding: 40px 6%;
+
+    }
+
+    .section-four-background {
+        padding: 0 6%;
+    }
+
+    .section-seven-background {
+        padding: 0 6%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .large-section-one {
+        padding: 3%;
+    }
+
+    nav {
+        padding: 40px 3%;
+    }
+
+    .section-four-background {
+        padding: 0 3%;
+    }
+
+    .section-seven-background {
+        padding: 0 3%;
+    }
 }
